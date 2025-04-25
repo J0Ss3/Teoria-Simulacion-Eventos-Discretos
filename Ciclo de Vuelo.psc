@@ -7,12 +7,24 @@ Algoritmo Viajar
 		
 		// 2.Reservar compuerta destino
 		Escribir 'Contacta y reserva compuerta de destino'	
+		Si compuerta_destino_está_ocupada Entonces
+			Escribir 'Esperando compuerta de destino disponible...'
+		FinSi
+		
+		
 		// 3.Reservar pista destino
 		Escribir 'Contacta y pista de destino'	
+		Si pista_destino_está_ocupada Entonces
+			Escribir 'Esperando pista de destino disponible...'
+		FinSi
+		
+		
 		//4.Embarque/Desembarque en origen
 		Escribir 'Desembarca de la compuerta'
 		//5.Espera pista de despegue en origen
 		Escribir 'Espera para despegar'
+		
+		
 		Escribir 'Despega y vuela'
 		//6.Vuelo
 		Escribir  'En vuelo hacia aeropuerto de destino'
@@ -29,7 +41,7 @@ Algoritmo Viajar
 		Si cantidad_vuelos=0 Entonces
 			Escribir 'Ruta Completada'
 			vuelos_pendientes<-Falso
-	
+			
 		SiNo
 			Escribir 'Selecciona un Nuevo Destino'
 		FinSi
